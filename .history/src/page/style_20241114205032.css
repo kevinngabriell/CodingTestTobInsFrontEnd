@@ -1,0 +1,42 @@
+.formAddPolis {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between each form field */
+}
+
+.formAddPolisDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formAddPolisDetail label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formAddPolisDetail input[type="text"],
+.formAddPolisDetail input[type="date"],
+.formAddPolisDetail select {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.formAddPolisDetail select {
+    -webkit-appearance: none; /* Remove default arrow for consistency across browsers */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+}
+
+.formAddPolisDetail input[type="text"]:focus,
+.formAddPolisDetail input[type="date"]:focus,
+.formAddPolisDetail select:focus {
+    outline: none;
+    border-color: #45a049; /* Add a green border on focus */
+}
